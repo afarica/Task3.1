@@ -3,12 +3,18 @@
 user_text = list(input("Enter your words:").replace(' ',""))
 quantity = len(user_text)
 counter=1
+counter1=1
 for letter in user_text:
 	if letter >= 'A' and letter <= 'Z':
 		percent = round(counter*100/quantity)
-		result=str(percent)+"%  capital letters "+ str(100-percent) + '%  uppercase letters'
+		result=str(percent)+"%  capital letters "
 		counter+=1
+	elif letter >='a' and letter <='z':
+		percent1 = round(counter1*100/quantity)
+		result1=str(percent1)+"%  uppercase letters"
+		counter1+=1
+
 try:
-	print(result)
+	print(result,result1)
 except:
-	print("All letters are uppercase")
+	print("Sorry,enter only letters")
