@@ -13,7 +13,6 @@ for letter in user_text:
 		percent1 = round(counter1*100/quantity)
 		result1=str(percent1)+"%  uppercase letters"
 		counter1+=1
-
 try:
 	print(result,result1)
 except:
